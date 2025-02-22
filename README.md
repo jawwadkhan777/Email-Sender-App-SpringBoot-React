@@ -77,8 +77,13 @@ This will start the React development server on `http://localhost:3000`.
 ## ⚡ API Endpoints (Backend)
 | Method | Endpoint | Description |
 |--------|----------|-------------|
+<<<<<<< HEAD
 | POST   | `/api/v1/email/send` | Send an email without attachments |
 | POST   | `/api/v1/email/send-with-file` | Send an email with attachments |
+=======
+| POST   | `/api/v1/email/send` | Send an email without attachment |
+| POST   | `/api/v1/email/send-with-file` | Send an email with attachment |
+>>>>>>> 57a96abbbff82bd485f500eb268a2bd83205bec5
 
 Example JSON payload:
 ```json
