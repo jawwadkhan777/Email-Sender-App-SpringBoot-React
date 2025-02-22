@@ -48,6 +48,7 @@ function EmailSender() {
     console.log(emailData);
   }
 
+  console.log(import.meta.env.VITE_TINYMCE_APIKEY);
   return (
     <div className="w-full min-h-screen flex justify-center items-center">
       <div className="email_card md:w-1/2 w-full mx-5 md:mx-0 shadow p-4 rounded-lg my-10 bg-white">
@@ -103,7 +104,7 @@ function EmailSender() {
                   message: editorRef.current.getContent(),
                 });
               }}
-              apiKey="pyvceg35p2elsukcvlxx3p4bysm0mrh19bk1p93i8siih2ps"
+              apiKey={import.meta.env.VITE_TINYMCE_APIKEY}
               onInit={(_evt, editor) => {
                 editorRef.current = editor;
               }}
