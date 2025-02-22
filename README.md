@@ -74,17 +74,11 @@ This will start the React development server on `http://localhost:3000`.
 
 ---
 
-## 📷 Screenshots
-| Compose Email Page | Sent Email Confirmation |
-|--------------------|-----------------------|
-| ![Compose](screenshots/compose-email.png) | ![Sent](screenshots/email-sent.png) |
-
----
-
 ## ⚡ API Endpoints (Backend)
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| POST   | `/api/email/send` | Send an email with attachments |
+| POST   | `/api/v1/email/send` | Send an email without attachment |
+| POST   | `/api/v1/email/send-with-file` | Send an email with attachment |
 
 Example JSON payload:
 ```json
